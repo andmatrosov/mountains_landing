@@ -1,0 +1,1 @@
+let speed,layers=document.querySelectorAll(".bg-wrapper");window.addEventListener("scroll",(()=>{let e=window.scrollY;layers.forEach((t=>{if(t.hasAttribute("data-speed")){speed=t.getAttribute("data-speed"),console.log(speed);let l=-e*speed/100;console.log(e,l),t.setAttribute("style",`transform: translate3d(0px, ${l}px, 0px)`)}}))}));

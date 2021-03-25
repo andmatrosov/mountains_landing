@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Chronicle Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chronicle Display Light Italic'),
+    url('../fonts/Chronicle Display Light Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chronicle Roman';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chronicle Display Roman'),
+    url('../fonts/Chronicle Display Roman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chronicle Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chronicle Display Semibold'),
+    url('../fonts/Chronicle Display Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Chronicle Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Chronicle Display Black'),
+    url('../fonts/Chronicle Display Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Semibold.woff') format('woff'),
+    url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Extrabold';
+  src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+    url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
