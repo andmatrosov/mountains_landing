@@ -18,39 +18,57 @@
       <div class="bg-wrapper bg-wrapper__sky">
         <img src="img/header/HG.png" alt="HG.png" />
       </div>
-      <div class="bg-wrapper bg-wrapper__mountains" data-speed="20">
+      <div
+        class="bg-wrapper bg-wrapper__mountains bg-wrapper--bottom-gradient"
+        data-speed="20"
+      >
         <img src="img/header/MG.png" alt="HG.png" />
       </div>
-      <div class="bg-wrapper bg-wrapper__land" data-speed="40">
+      <div
+        class="bg-wrapper bg-wrapper__land bg-wrapper--bottom-gradient"
+        data-speed="40"
+      >
         <img src="img/header/VG.png" alt="HG.png" />
       </div>
     </div>
 
-    <aside class="side-content side-content--left side-content--fixed">
-      <ul class="social">
-        <li class="social__item"><p>Follow Us</p></li>
-        <li class="social__item">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="social__item">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
-    </aside>
+    <section id="home" class="home home--pt">
+      <!-- Side blocks -->
+      <aside class="side-content side-content--left side-content--fixed">
+        <ul class="social">
+          <li class="social__item"><p>Follow Us</p></li>
+          <li class="social__item">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="social__item">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </aside>
 
-    <aside class="side-content side-content--right side-content--fixed">
-      <ul class="scroll-nav">
-        <li class="scroll-nav__item"><a href="#">Start</a></li>
-        <li class="scroll-nav__item"><a href="#">01</a></li>
-        <li class="scroll-nav__item"><a href="#">02</a></li>
-        <li class="scroll-nav__item"><a href="#">03</a></li>
-      </ul>
-    </aside>
+      <aside class="side-content side-content--right side-content--fixed">
+        <ul class="scroll-nav">
+          <li class="scroll-nav__item" data-pos="0">
+            <a href="#home">Start</a>
+          </li>
+          <li class="scroll-nav__item" data-pos="60">
+            <a href="#block-1">01</a>
+          </li>
+          <li class="scroll-nav__item" data-pos="120">
+            <a href="#block-2">02</a>
+          </li>
+          <li class="scroll-nav__item" data-pos="180">
+            <a href="#block-3">03</a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Side blocks End -->
 
-    <section class="home home--pt">
       <div class="home__header">
         <div class="home__logo">mntn</div>
         <nav class="menu">
+          <a href="#" class="menu__close"></a>
+          <a href="#" class="menu__account">Account</a>
           <ul class="menu__list">
             <li class="menu__item menu__item--margin">
               <a href="#">Equipment</a>
@@ -64,6 +82,8 @@
           </ul>
         </nav>
         <a href="#" class="home__account">Account</a>
+
+        <div class="home__burger"></div>
       </div>
       <div class=".container home__container">
         <p class="title__sup home__title-sup">A Hiking guide</p>
@@ -74,6 +94,132 @@
         <p class="desc desc-link desc-link--down">scroll down</p>
       </div>
     </section>
+
+    <section class="main">
+      <div class="container main__container">
+        <div id="block-1" class="main-content__item main-content__item--mb">
+          <div class="main-content__text">
+            <p class="title__sup">Get Started</p>
+            <h2 class="title .title__content main-content__title">
+              What level of hiker are you?
+            </h2>
+            <p class="main-content__desc">
+              Determining what level of hiker you are can be an important tool
+              when planning future hikes. This hiking level guide will help you
+              plan hikes according to different hike ratings set by various
+              websites like All Trails and Modern Hiker. What type of hiker are
+              you – novice, moderate, advanced moderate, expert, or expert
+              backpacker?
+            </p>
+            <p class="desc desc-link desc-link--right">
+              <a href="#" class="main-content__link desc-link--accent"
+                >read more</a
+              >
+            </p>
+          </div>
+          <div class="main-content__img">
+            <img src="img/main/01.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          id="block-2"
+          class="main-content__item main-content__item--mb main-content__item--reversed"
+        >
+          <div class="main-content__text">
+            <p class="title__sup">Hiking Essentials</p>
+            <h2 class="title .title__content main-content__title">
+              Picking the right Hiking Gear!
+            </h2>
+            <p class="main-content__desc">
+              The nice thing about beginning hiking is that you don’t really
+              need any special gear, you can probably get away with things you
+              already have. Let’s start with clothing. A typical mistake hiking
+              beginners make is wearing jeans and regular clothes, which will
+              get heavy and chafe wif they get sweaty or wet.
+            </p>
+            <p class="desc desc-link desc-link--right">
+              <a href="#" class="main-content__link desc-link--accent"
+                >read more</a
+              >
+            </p>
+          </div>
+          <div class="main-content__img">
+            <img src="img/main/02.jpg" alt="" />
+          </div>
+        </div>
+        <div id="block-3" class="main-content__item main-content__item--mb">
+          <div class="main-content__text">
+            <p class="title__sup">where you go is the key</p>
+            <h2 class="title .title__content main-content__title">
+              Understand Your Map & Timing
+            </h2>
+            <p class="main-content__desc">
+              To start, print out the hiking guide and map. If it’s raining,
+              throw them in a Zip-Lock bag. Read over the guide, study the map,
+              and have a good idea of what to expect. I like to know what my
+              next landmark is as I hike. For example, I’ll read the guide and
+              know that say, in a mile, I make a right turn at the junction..
+            </p>
+            <p class="desc desc-link desc-link--right">
+              <a href="#" class="main-content__link desc-link--accent"
+                >read more</a
+              >
+            </p>
+          </div>
+          <div class="main-content__img">
+            <img src="img/main/03.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-content--left">
+            <div class="home__logo footer__logo">MNTN</div>
+            <p class="footer__desc footer__desc--margin">
+              Get out there & discover your next <br />
+              slope, mountain & destination!
+            </p>
+            <p class="footer__copy">
+              Copyright 2019 MNTN, Inc. Terms & Privacy
+            </p>
+          </div>
+          <div class="footer-content--right">
+            <ul class="footer__list">
+              <li class="footer__item footer__list-header">More on The Blog</li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About MNTN</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contributors & Writers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Write For Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item footer__list-header">More on MNTN</li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">The Team</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Jobs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Press</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
     <!-- <script></script> -->

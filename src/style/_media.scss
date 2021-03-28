@@ -1,0 +1,284 @@
+@media (min-width: 1462px) {
+  $side-padding: 80px;
+
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 1462px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .side-content {
+    &--right {
+      right: $side-padding;
+    }
+    &--left {
+      left: $side-padding;
+    }
+  }
+}
+
+// Large devices (desktops, more than 1200px)
+@media (max-width: 1461px) {
+  $side-padding: 40px;
+
+  html {
+    font-size: 9px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .side-content {
+    &--right {
+      right: $side-padding;
+    }
+    &--left {
+      left: $side-padding;
+    }
+  }
+
+  .home {
+    padding-left: $side-padding;
+    padding-right: $side-padding;
+  }
+
+  .main {
+    &-content {
+      &__item:nth-child(even) .main-content__text {
+        padding-left: 40px;
+      }
+      &__item:nth-child(odd) .main-content__text {
+        padding-right: 40px;
+      }
+    }
+  }
+
+  .title {
+    &__sup {
+      font-size: 1.6rem;
+      padding-left: 98px;
+      &::before {
+        width: 62px;
+      }
+    }
+  }
+
+  .home {
+    &__title {
+      font-size: 7.8rem;
+      line-height: 9.5rem;
+    }
+    &__container {
+      padding-top: 16rem;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  $side-padding: 30px;
+
+  .container {
+    max-width: 960px;
+  }
+
+  .side-content {
+    &--right {
+      right: $side-padding;
+    }
+    &--left {
+      left: $side-padding;
+    }
+  }
+
+  .main {
+    &-content {
+      &__item:nth-child(even) .main-content__text {
+        padding-left: 40px;
+      }
+      &__item:nth-child(odd) .main-content__text {
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 880px;
+  }
+
+  .bg {
+    &-wrapper {
+      &__mountains {
+        top: 335px;
+      }
+      &__land {
+        top: 538px;
+      }
+      &--bottom-gradient {
+        &::after {
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  .bg-wrapper__mountains.bg-wrapper--bottom-gradient::after {
+    height: 300px;
+    bottom: 0;
+  }
+
+  .title {
+    &__sup {
+    }
+  }
+  .home {
+    &__title {
+      font-size: 6rem;
+      line-height: 8rem;
+    }
+    &__container {
+      width: 780px;
+      padding-top: 15rem;
+    }
+  }
+
+  .side-content {
+    &--fixed {
+      position: absolute;
+    }
+  }
+
+  .scroll-nav {
+    display: none;
+  }
+
+  .home {
+    &__container {
+      width: 650px;
+    }
+  }
+
+  .main {
+    &-content {
+      &__item {
+        &--mb {
+          margin-bottom: 40px;
+        }
+        &:last-child {
+          &.main-content__item--mb {
+            margin-bottom: 80px;
+          }
+        }
+      }
+      &__text {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  $side-padding: 40px;
+  $home-pt: 40px;
+  .home {
+    &--pt {
+      padding-top: $home-pt;
+    }
+    &__header {
+      justify-content: center;
+    }
+
+    &__burger {
+      top: $side-padding;
+      right: $side-padding;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: $main-bg;
+    padding: 100px 15px 0;
+    &__list {
+      padding-left: 30px;
+    }
+
+    &__item {
+      font-size: 2.4rem;
+      display: block;
+      margin-bottom: 30px;
+      margin-left: 0;
+    }
+    &__account {
+      display: inline-block;
+      position: relative;
+      font-family: 'Gilroy Bold', sans-serif;
+      color: $text-white;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      padding-left: 30px;
+      padding-right: 40px;
+      margin-bottom: 30px;
+      &::before {
+        content: '\f2bd';
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        font-size: 2.4rem;
+      }
+    }
+
+    &__close {
+      display: inline-block;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 24px;
+      height: 24px;
+      color: $text-white;
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        background-color: $text-white;
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(135deg);
+      }
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  .home {
+    &__account {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+}
