@@ -7,7 +7,9 @@ window.addEventListener('scroll', () => {
     if (e.hasAttribute('data-speed')) {
       speed = e.getAttribute('data-speed');
       let yPos = -(pageTop * speed) / 100;
-      e.setAttribute('style', `transform: translate3d(0px, ${yPos}px, 0px)`);
+      if (pageTop >= 0) {
+        e.setAttribute('style', `transform: translate3d(0px, ${yPos}px, 0px)`);
+      }
     }
   });
 });
@@ -29,4 +31,21 @@ window.addEventListener('scroll', () => {
         console.log('Переключение');
       }
     });
+});
+
+// Side menu
+let openMenu = document.querySelector('.home__burger');
+let closeMenu = document.querySelector('.side-menu__close');
+let menu = document.querySelector('.side-menu');
+
+openMenu.addEventListener('click', () => {
+  if (!menu.classList.contains('side-menu--active')) {
+    menu.classList.add('side-menu--active');
+  }
+});
+
+closeMenu.addEventListener('click', () => {
+  if (menu.classList.contains('side-menu--active')) {
+    menu.classList.remove('side-menu--active');
+  }
 });
