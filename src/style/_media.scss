@@ -219,6 +219,14 @@
       }
     }
   }
+
+  .footer {
+    &__list {
+      &:first-child {
+        margin-right: 150px;
+      }
+    }
+  }
 }
 
 @media (max-width: 915.98px) {
@@ -286,12 +294,17 @@
   }
 
   .main {
+    &--pt {
+      padding-top: 30px;
+    }
     &-content {
       &__item:nth-child(even) .main-content__text {
         padding-left: 10px;
+        padding-right: 0;
       }
       &__item:nth-child(odd) .main-content__text {
         padding-right: 10px;
+        padding-left: 0;
       }
       &__text {
         min-width: 320px;
@@ -315,6 +328,27 @@
   .side-menu {
     display: inline-block;
   }
+
+  .footer {
+    padding-bottom: 50px;
+    &-content {
+      margin: 0 20px;
+      &--right {
+        flex-direction: column;
+      }
+      &--left {
+        min-height: 160px;
+      }
+    }
+    &__logo {
+      text-align: left;
+    }
+    &__list {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 670.98px) {
@@ -322,9 +356,31 @@
     &-content {
       &__item {
         // flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
       }
+      &__item:nth-child(even) .main-content__text {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &__item:nth-child(odd) .main-content__text {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &__item {
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -10px;
+          background-color: rgba(255, 255, 255, 0.4);
+          box-shadow: 0 1px 1px 1px rgba($color: #000000, $alpha: 0.2);
+        }
+      }
+
       &__text {
         width: 100%;
       }
@@ -334,6 +390,10 @@
         }
       }
     }
+  }
+
+  picture {
+    width: 100%;
   }
 }
 
@@ -367,6 +427,10 @@
   }
 
   .home {
+    &__container {
+      padding-top: calc(50vh - 62px);
+      transform: translateY(-30%);
+    }
     &__title {
       font-size: 4rem;
       line-height: 4.5rem;
@@ -378,6 +442,22 @@
           height: 1px;
         }
       }
+    }
+  }
+  .footer {
+    &-content {
+      &--left {
+        min-width: 140px;
+        min-height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375.98px) {
+  .main {
+    &--pt {
+      padding-top: 0;
     }
   }
 }

@@ -486,6 +486,11 @@ ul li a {
     &--right {
       display: flex;
     }
+    &--left {
+      width: 45%;
+      min-width: 282px;
+      position: relative;
+    }
   }
   &__desc {
     font-family: 'Gilroy', sans-serif;
@@ -495,10 +500,11 @@ ul li a {
     color: $text-white;
     &--margin {
       margin-top: 24px;
-      margin-bottom: 122px;
     }
   }
   &__copy {
+    position: absolute;
+    bottom: 20px;
     font-family: 'Gilroy', sans-serif;
     font-weight: 500;
     font-size: 1.8rem;

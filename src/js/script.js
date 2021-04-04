@@ -49,3 +49,11 @@ closeMenu.addEventListener('click', () => {
     menu.classList.remove('side-menu--active');
   }
 });
+
+// Footer lists
+let footerlists = document.querySelectorAll('.footer__list');
+footerlists.forEach((e) => {
+  e.addEventListener('click', () => {
+    e.classList.toggle('active');
+  });
+});
