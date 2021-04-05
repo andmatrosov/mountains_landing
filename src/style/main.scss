@@ -143,8 +143,8 @@ ul li a {
       display: inline-block;
       width: 80px;
       height: 20px;
-      transform: rotate(90deg) translate(-50%, -100%);
-      transform-origin: 0 0;
+      transform: rotate(90deg) translate(-20px, -100%);
+      transform-origin: 0 -5px;
     }
   }
 }
@@ -303,11 +303,13 @@ ul li a {
     padding-right: 41px;
     margin: 0;
     &::after {
+      content: '';
       position: absolute;
       width: 24px;
       height: 24px;
-      display: flex;
-      justify-content: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
@@ -317,12 +319,12 @@ ul li a {
     }
     &--down {
       &::after {
-        content: url(../img/icons/navigation/arrow-down.png);
+        background-image: url(../img/icons/navigation/arrow-down.png);
       }
     }
     &--right {
       &::after {
-        content: url(../img/icons/navigation/arrow-right.png);
+        background-image: url(../img/icons/navigation/arrow-right.png);
       }
     }
   }

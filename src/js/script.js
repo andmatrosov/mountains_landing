@@ -2,7 +2,7 @@ let layers = document.querySelectorAll('.bg-wrapper');
 let speed;
 window.addEventListener('scroll', () => {
   let pageTop = window.scrollY;
-
+  let mainCont = document.querySelector('.main');
   layers.forEach((e) => {
     if (e.hasAttribute('data-speed')) {
       speed = e.getAttribute('data-speed');
@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => {
       if (pageTop >= 0) {
         e.setAttribute('style', `transform: translate3d(0px, ${yPos}px, 0px)`);
       }
+      mainCont.setAttribute('style', `margin-top: ${yPos}px`);
     }
   });
 });
