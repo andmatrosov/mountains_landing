@@ -29,7 +29,6 @@ window.addEventListener('scroll', () => {
           }
         });
         menuItem[index].classList.add('active');
-        console.log('Переключение');
       }
     });
 });
