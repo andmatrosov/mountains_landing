@@ -1,7 +1,8 @@
 // Fonts
-@import 'fonts.scss';
+@import 'fonts';
+@import 'normolize';
 
-// variables
+//variables
 $main-bg: #0b1d26;
 $text-white: #ffffff;
 $text-accent: #fbd784;
@@ -534,4 +535,4 @@ ul li a {
   }
 }
 
-@import url('media.scss');
+@import 'media';
